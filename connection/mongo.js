@@ -1,6 +1,8 @@
 /* MongoDB Connection */
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://Daniel:8imUgaVHr5n51fNv@cluster0.fv5gm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+const MONGODB_URI = 'mongodb+srv://Daniel:8imUgaVHr5n51fNv@cluster0.fv5gm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+
+mongoose.connect(MONGODB_URI, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useCreateIndex: true
