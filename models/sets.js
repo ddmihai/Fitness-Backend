@@ -2,9 +2,9 @@ const mongoose          = require('mongoose');
 
 /* User Schema */
 const set = new mongoose.Schema({
-    reps:  { type: Number, required: true },
-    weight: { type: Number, required: true},
-    timeBetween: { type: String, required: true},
+    reps:  { type: Number, required: false },
+    weight: { type: Number, required: false},
+    timeBetween: { type: String, required: false},
     comments: { type: String }
 });
 

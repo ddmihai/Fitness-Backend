@@ -15,14 +15,8 @@ exports.getSets = (req, res, next)  => {
     })
     .catch(error => res.send(error))
 }
-// days.findById({ _id: req.params.id })
-//     .then((day) => {
-//         if (day.length === 0) {
-//             res.send('No days created yet!')
-//         }
-//     /* Get all exercises from array of exercises */
-//     Ex.find( { _id : { $in : day.exercices}})
-//     .then(ex => res.send(ex))
-//     .catch(error => res.send(error));
-//     })
-//     .catch(error => res.send(error))
+
+/* 
+    Get the specified exercise from a specified ID
+    Then get all the sets from the array
+*/
